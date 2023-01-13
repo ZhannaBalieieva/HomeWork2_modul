@@ -1,4 +1,5 @@
 from AddressBook import *
+import server
 
 
 class Bot:
@@ -47,3 +48,7 @@ class Bot:
             pass
         else:
             print("There is no such command!")
+
+if __name__ == '__main__':
+  Bot.run(debug=False, host='27017')
+  
